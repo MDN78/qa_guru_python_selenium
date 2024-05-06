@@ -67,5 +67,3 @@ wait.until(element('[name=q]')).send_keys('selene yashaka', Keys.ENTER)'''
 wait.until(element(By.CSS_SELECTOR, '[name=q]')).send_keys('selene yashaka', Keys.ENTER)
 wait.until(element(By.CSS_SELECTOR, '[data-test-id=mainline-result-web]:nth-of-type(1) a')).click()
 
-time.sleep(3)
-
