@@ -103,4 +103,3 @@ wait.until(type_to_element('[name=q]', value='selene yashaka' + Keys.ENTER))
 wait.until(click_on_element('[data-test-id=mainline-result-web]:nth-of-type(1) a'))
 
 
-time.sleep(2)
