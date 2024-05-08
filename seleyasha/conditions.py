@@ -15,6 +15,9 @@ def to_locator(selector: str) -> tuple[str, str]:
 def type_to_element(selector, value):
     def command(driver: WebDriver):
         webelement = driver.find_element(*to_locator(selector))
+        # is_element_covered = driver.execute_script('element = arguments[0]; element.click; return is_element_covered', webelement) == 'true'
+        # if is_element_cover:
+        #     raise WebDriverException('covered element')
         webelement.send_keys(value)
         return webelement
 
