@@ -1,6 +1,16 @@
-## 0
-Повторить код из урока, возможно коректируя селекторы 
-(можно выбрать более удобный для себя поисковый движок, типа ecosia.org, duckduckgo.com, и т.д.). 
-Можно подобрать свое имя для фреймворка.
-Сохранить проект в гит-репозитории в отдельной бренче `refactoring-selenium-stage-0`  
+# 1 Повторить код из урока и отрефакторить  
+возможно коректируя селекторы   
+Отрефакторить рабочий код до версии
+
+```python
+driver.get('https://ecosia.org')
+query = '[name=q]'
+type(query, value='selene' + Keys.ENTER)
+driver.back()
+type(query, value=' yashaka' + Keys.ENTER)
+click('[data-test-id=mainline-result-web]:nth-of-type(1) a')
+assert_that(number_of_elements('[id^=issue_]:not([id$=_link])', value=4)
+driver.quit()
+```  
+
 
